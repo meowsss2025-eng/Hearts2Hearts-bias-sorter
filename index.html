@@ -7,37 +7,11 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <div id="top-bar">
-    <button id="notice-btn" onclick="toggleNotice()">📢</button>
-<button id="lang-btn" onclick="toggleLangMenu()">🌐</button>
-    <div id="lang-menu">
-      <button onclick="setLang('en')">English</button>
-      <button onclick="setLang('ko')">한국어</button>
-      <button onclick="setLang('zh')">中文</button>
-      <button onclick="setLang('ja')">日本語</button>
-      <button onclick="setLang('id')">Indonesia</button>
-      <button onclick="setLang('es')">Español</button>
-    </div>
-  </div>
-
-  <div id="notice-modal">
-    <div id="notice-box">
-      <h2>📢 Notice</h2>
-      <ul id="notice-list">
-        <li>🆕 New languages added! English, Korean, Chinese, Japanese, Indonesian, and Spanish has been added on the "Change language" feature!!!</li>
-      </ul>
-      <button id="close-notice" onclick="toggleNotice()">✕ Close</button>
-    </div>
-  </div>
-
   <h1>💗 Hearts2hearts Bias Sorter</h1>
   <p id="subtitle">Choose your favorite member in each battle!</p>
-
   <div id="progress-wrap">
-    <p id="progress"></p>
+    <p id="progress">Match 1 of 28 · 0% SORTED</p>
   </div>
-
   <div id="sorter">
     <div class="member" onclick="pick('left')">
       <img id="leftImg" src="" alt="Member" />
@@ -48,13 +22,10 @@
       <div class="member-name" id="rightName"></div>
     </div>
   </div>
-
   <div id="results"></div>
-
   <footer>
-    <div id="logo-text">made by @geurigonim</div>
+    <div id="logo-text">Made by @geurigonim</div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
