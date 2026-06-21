@@ -12,6 +12,20 @@ body{
   flex-wrap:wrap;
 }
 
+@media(max-width:600px){
+  #sorter{
+    gap:8px;
+    padding:0 8px;
+  }
+  .member{
+    width:46vw;
+    padding:8px;
+  }
+  .member img{
+    height:55vw;
+  }
+}
+
 .member{
   cursor:pointer;
   background:white;
