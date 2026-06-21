@@ -72,8 +72,6 @@ function setLang(lang) {
   currentLang = lang;
   const t = i18n[lang];
   document.getElementById("subtitle").innerHTML = t.subtitle;
-  document.getElementById("lang-btn").innerHTML = t.lang_btn;
-  document.getElementById("notice-btn").innerHTML = t.notice_btn;
   document.querySelector("#notice-box h2").innerHTML = "📢 " + t.notice_title;
   document.getElementById("close-notice").innerHTML = "✕ " + t.close;
   const pct = Math.round((current / matchups.length) * 100);
