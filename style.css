@@ -3,7 +3,6 @@
   margin:0;
   padding:0;
 }
-
 body{
   font-family:'Arial',sans-serif;
   text-align:center;
@@ -11,21 +10,17 @@ body{
   min-height:100vh;
   padding:24px 16px;
 }
-
 h1{
   font-size:1.8rem;
   font-weight:900;
   color:#d45c8a;
   margin-bottom:4px;
-  letter-spacing:-0.5px;
 }
-
 #subtitle{
   font-size:0.85rem;
   color:#888;
   margin-bottom:16px;
 }
-
 #progress-wrap{
   display:inline-block;
   background:white;
@@ -34,20 +29,17 @@ h1{
   padding:6px 20px;
   margin-bottom:24px;
 }
-
 #progress{
   font-size:0.85rem;
   font-weight:700;
   color:#c45c8a;
   letter-spacing:1px;
 }
-
 #sorter{
   display:flex;
   justify-content:center;
   gap:12px;
 }
-
 .member{
   cursor:pointer;
   background:white;
@@ -57,20 +49,16 @@ h1{
   max-width:220px;
   box-shadow:0 6px 20px rgba(0,0,0,.12);
   transition:transform .15s ease, box-shadow .15s ease;
-  position:relative;
   border:2px solid transparent;
 }
-
 .member:hover{
   transform:scale(1.03);
   box-shadow:0 10px 28px rgba(212,92,138,.25);
   border-color:#f0a0c0;
 }
-
 .member:active{
   transform:scale(0.97);
 }
-
 .member img{
   width:100%;
   height:72vw;
@@ -79,7 +67,6 @@ h1{
   object-position:top;
   display:block;
 }
-
 .member-name{
   padding:10px 8px;
   font-size:1rem;
@@ -87,18 +74,15 @@ h1{
   color:#333;
   background:white;
 }
-
 #results{
   margin-top:30px;
 }
-
 #results h2{
   font-size:1.4rem;
   font-weight:900;
   color:#d45c8a;
   margin-bottom:16px;
 }
-
 .result{
   margin:8px auto;
   width:90%;
@@ -112,14 +96,14 @@ h1{
   color:#333;
   text-align:left;
 }
-
 footer{
   margin-top:40px;
   display:flex;
   justify-content:center;
 }
-
-#logo{
-  width:100px;
-  opacity:0.85;
+#logo-text{
+  font-size:1.1rem;
+  font-weight:900;
+  color:#d45c8a;
+  letter-spacing:1px;
 }
