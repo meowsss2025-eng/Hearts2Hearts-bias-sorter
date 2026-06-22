@@ -1,12 +1,12 @@
 const members = [
-  { name:"Jiwoo",  img:"./Jiwoo.jpg" },
-  { name:"Carmen", img:"./Carmen.jpg" },
-  { name:"Yuha",   img:"./Yuha.jpg" },
-  { name:"Stella", img:"./Stella.jpg" },
-  { name:"Juun",   img:"./Juun.jpg" },
-  { name:"A-na",   img:"./A-na.jpg" },
-  { name:"Ian",    img:"./Ian.jpg" },
-  { name:"Ye-on",  img:"./Ye-on.jpg" }
+  { name:"Jiwoo",  img:"Jiwoo.jpg" },
+  { name:"Carmen", img:"Carmen.jpg" },
+  { name:"Yuha",   img:"Yuha.jpg" },
+  { name:"Stella", img:"Stella.jpg" },
+  { name:"Juun",   img:"Juun.jpg" },
+  { name:"A-na",   img:"A-na.jpg" },
+  { name:"Ian",    img:"Ian.jpg" },
+  { name:"Ye-on",  img:"Ye-on.jpg" }
 ];
 
 let scores = {};
@@ -47,9 +47,9 @@ function showResults() {
   document.getElementById("subtitle").style.display = "none";
   const ranking = Object.entries(scores).sort((a, b) => b[1] - a[1]);
   let html = "<h2>🏆 Your Bias Ranking</h2>";
-  ranking.forEach(([name], index) => {
+  ranking.forEach(([name], index) {
     const medal = index === 0 ? "🥇" : index === 1 ? "🥈" : index === 2 ? "🥉" : `#${index + 1}`;
-    html += `<div class=\"result\">${medal} ${name}</div>`;
+    html += `<div class="result">${medal} ${name}</div>`;
   });
   document.getElementById("results").innerHTML = html;
 }
